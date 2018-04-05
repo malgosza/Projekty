@@ -1,0 +1,59 @@
+#mojeId{
+	background-color:blue;
+}
+h3{
+	color:red;
+}
+
+.tlo{
+	background-color:#c52c2c;
+	font-family
+
+}
+.kontener{
+	background-color:#ead494;
+	margin-left:100px;
+	margin-right:100px;
+	margin-top:80px;
+
+	padding:50px;
+}
+.naglowek{
+	border-width:2px;
+	border-style:solid;
+	text-align:center;
+	background-color: #9393ff;
+	font-family:sans-serif;
+	text-decoration:underline;
+}
+.nav{
+	float:left;
+	border-width:2px;
+	border-style:solid;
+	background-color: #9393ff;
+	font-family:sans-serif;
+	margin-right:20px;
+}
+li{
+	list-style-type: none;
+	 margin-left: 0px;
+    padding: 0px;
+}
+.tresc{
+	float:right;
+
+	font-family:sans-serif;
+
+}
+.dif{
+
+	margin-top:20px;
+	margin-bottom:20px;
+}
+.stopka{
+	border-width:2px;
+	border-style:solid;
+	text-align:center;
+	background-color: #7A930f;
+	font-family:sans-serif
+}

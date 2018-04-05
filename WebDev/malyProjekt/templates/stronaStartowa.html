@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>Ładna strona</title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='stajl.css') }}">
+</head>
+
+<body class="tlo">
+
+ <div class="kontener">
+	<div class="naglowek">
+		<h1>Moja strona</h1>
+	</div>
+	<div class="dif">
+		<div class="nav">
+			<ul>
+				<li>kot</li>
+				<li>pies</li>
+				<li>szczur</li>
+                <li>{{zwierzak}}</li>
+			</ul>
+		</div>
+		<div class="tresc"></div>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+		 Vestibulum consectetur, metus non euismod placerat,
+		 lectus eros lacinia est, eu tempus risus tellus a enim.
+		 Ut at orci ut ligula condimentum gravida ut nec dui.
+		Cras ac varius lacus, ac finibus ex.
+		 Cras a nunc quis eros convallis commodo ut eget neque.
+		 Suspendisse dui diam, porttitor sit amet feugiat eu,
+		 blandit vel quam. Sed a elementum nibh, vitae euismod purus.
+		 Duis euismod sapien quis sapien ornare rutrum. Etiam massa arcu,
+		 maximus quis augue sit amet, bibendum feugiat neque.
+		 Pellentesque vestibulum massa ac faucibus pharetra.</p>
+
+        <hr>
+        <p>{{ message }}</p>
+	</div>
+	<div class="stopka">
+		<h2>adres</h2>
+	</div>
+ </div>
+
+ </body>
+</html>

@@ -16,10 +16,12 @@ class poleGRY:
             print(self.plansza[y], end='')
 
     def ruchGracza(self, idx):
+
         aktualnaFigura = self.KOLKO
         if(self.czyTerazKrzyzyk == True):
             aktualnaFigura = self.KRZYZYK
-            self.czyTerazKrzyzyk = False
+
+        self.czyTerazKrzyzyk = not self.czyTerazKrzyzyk
 
         self.plansza[idx]= aktualnaFigura
 
@@ -28,8 +30,24 @@ class poleGRY:
     # 2 gdy kolko
     # 3 gdy remis
     def wynikGry(self):
-        pass
+
+        for i in self.plansza:
+            if(i==0):
+                return 0
 
 
 
 p=poleGRY()
+while(True):
+    p.piszPlansze()
+    p.ruchGracza(input())
+    wynik = p.wynikGry()
+
+    if(wynik == 0):
+        continue
+    elif(wynik == 1):
+        print("KRZYZYK!")
+    elif(wynik == 2):
+        print("KOLKO!")
+    else:
+        print("remis!")
